@@ -172,23 +172,6 @@ public class MSButton
             if(i==0 && j==0) continue;
             else if(isValid(row+i, col+j) && bombs.contains(buttons[row+i][col+j]))
               numBombs += 1;
-        // for(int r=0;r<3;r++) {
-        //   //Checking top buttons
-        //   if(isValid(row-1+r, col+1) && bombs.contains(buttons[row-1+r][col+1])) {
-        //     numBombs += 1;
-        //   }
-        //   //Checking bottom buttons
-        //   if(isValid(row-1+r, col-1) && bombs.contains(buttons[row-1+r][col-1])) {
-        //     numBombs += 1;
-        //   }
-        // }
-        // //Checking buttons to the left and right
-        // if(isValid(row-1, col) && bombs.contains(buttons[row-1][col])) {
-        //   numBombs++;
-        // }
-        // if(isValid(row+1, col) && bombs.contains(buttons[row+1][col])) {
-        //   numBombs++;
-        // }
         return numBombs;
     }
 }
